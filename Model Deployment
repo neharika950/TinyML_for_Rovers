@@ -1,0 +1,59 @@
+
+---
+
+# Deployment Performance Comparison
+
+## DNN Model – Quantized vs. Unoptimized (Edge Impulse)
+
+### Model Architecture
+
+Deep Neural Network (DNN) for Maximum Ground Temperature (°C) Prediction
+
+---
+
+### Table IV. Deployment Performance Comparison for DNN Model
+
+| Model Type            | Latency | RAM    | Flash   | Accuracy |
+| --------------------- | ------- | ------ | ------- | -------- |
+| Quantized (INT8)      | 1 ms    | 1.2 KB | 11.1 KB | 89.88%   |
+| Unoptimized (Float32) | 1 ms    | 1.2 KB | 11.1 KB | 93.57%   |
+
+**Observation:**
+Quantization reduces numerical precision while maintaining identical latency and memory footprint, with a small accuracy drop (~3.7%).
+
+---
+
+# 1D CNN Model Architecture
+
+## Predicting Maximum Ground Temperature (°C)
+
+The 1D CNN model uses:
+
+* 1D Convolution layer
+* ReLU activation
+* Dense output layer
+* Regression-based output
+
+Designed for lightweight sequential environmental feature extraction.
+
+---
+
+## Table V. Deployment Metrics for 1D CNN Model
+
+| Model Type            | Latency | RAM    | Flash   | Accuracy |
+| --------------------- | ------- | ------ | ------- | -------- |
+| Quantized (INT8)      | 1 ms    | 1.2 KB | 11.1 KB | 76.13%   |
+| Unoptimized (Float32) | 10 ms   | 1.2 KB | 11.1 KB | 82.18%   |
+
+**Observation:**
+
+* Quantization significantly reduces latency (10 ms → 1 ms).
+* Slight accuracy drop (~6%).
+* Memory footprint remains consistent across versions.
+
+---
+
+
+
+
+
