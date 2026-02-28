@@ -41,7 +41,7 @@ The dataset is derived from the **Mars Rover Environmental Monitoring Station (R
 * UV_Level_low
 * UV_Level_moderate
 * UV_Level_very_high
-  To predict max ground Temp
+ 
 
 Cleaned dataset size: 3170 complete records
 
@@ -100,6 +100,7 @@ Cleaned dataset size: 3170 complete records
 * Drop incomplete rows
 * Perform summary statistics
 * Standardize features using StandardScaler
+* To predict max ground Temp ( or any Target )
 
 ### Step 2: Model Training
 
