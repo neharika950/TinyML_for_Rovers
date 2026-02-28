@@ -22,9 +22,18 @@ The models are optimized for edge deployment using:
 * Quantization techniques
 * Embedded system compatibility testing
 
-The system is designed to operate on microcontrollers and edge AI hardware platforms.
+The system is designed to operate on microcontrollers and edge AI hardware platforms
 
----
+
+
+
+
+Block Diagram of AI-Powered Mars Rover System
+<br> <p align="center"> <img src="https://github.com/user-attachments/assets/0a33efce-7945-4a7f-bda8-05648126aab4" width="700"> </p>
+
+<br><br>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/5ed07b13-a9de-4e5e-8789-faa3ff574e68" width="500"> </p> <br>
 
 ## Dataset
 
